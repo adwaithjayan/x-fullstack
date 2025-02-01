@@ -10,12 +10,7 @@ export const metadata: Metadata = {
       description: 'Next.js social media application project',
 }
 
-export default function RootLayout({
-                                         children
-                                   }: Readonly<{
-      children: React.ReactNode;
-      modal: React.ReactNode;
-}>) {
+export default function RootLayout({children}:{children: React.ReactNode;modal: React.ReactNode;}) {
       return (
           <ClerkProvider>
                 <QueryProvider>
